@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3vh;
+}
+
+.content-header {
+  font-size: 4vw;
+}
+
+.input-container {
+  width: 100%;
+  padding: 1vw;
+}
+.input-check-box,
+.input-box {
+  height: 6vh;
+  width: 100%;
+  font-size: 1vw;
+  padding-left: 0.2vw;
+  font-family: "Oswald", sans-serif;
+}
+
+.input-area {
+  height: 30vh;
+  width: 100%;
+  font-size: 1vw;
+  padding-left: 0.2vw;
+  font-family: "Oswald", sans-serif;
+}
+
+.input-label-title {
+  font-size: 1.2vw;
+  margin-bottom: 0.5vw;
+  margin-top: 2vw;
+}
+
+.submit-btn {
+  width: 10%;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.2vw;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 0.5vw;
+  margin-top: 0.5vw;
+  cursor: pointer;
+  transition: all ease 0.15s;
+  font-family: "Oswald", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.result-container {
+  margin-top: 2vw;
+  padding: 1vw;
+  width: 100%;
+}
+
+.title-length,
+.duplicate-content {
+  color: #000;
+  font-size: 1.2vw;
+}
+
+span {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: red;
+}
