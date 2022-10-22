@@ -16,6 +16,8 @@ body {
   justify-content: center;
   flex-direction: column;
   padding-top: 3vh;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .content-header {
@@ -26,6 +28,7 @@ body {
   width: 100%;
   padding: 1vw;
 }
+
 .input-check-box,
 .input-box {
   height: 6vh;
@@ -77,10 +80,20 @@ body {
   width: 100%;
 }
 
+.number-heading-item-h1,
+.number-heading-item-h2,
+.number-heading-item-h3,
+.number-heading-item-h4,
+.number-heading-item-h5,
+.number-heading-item-h6,
+.number-a-internal-link,
+.number-a-external-link,
+.number-a-tag,
 .title-length,
 .duplicate-content {
   color: #000;
   font-size: 1.2vw;
+  list-style: none;
 }
 
 span {

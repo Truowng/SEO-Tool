@@ -1,18 +1,18 @@
+import { $, $$ } from "./app.js";
+
 function checkDuplicateContentFn(value, valueCheck) {
-  const duplicateContent = document.querySelector(".duplicate-content");
-  if (value.length !== 0 && valueCheck.length !== 0) {
-    console.log("hello");
-    let duplicateContentTimes =
-      value.toLowerCase().split(valueCheck.toLowerCase()).length - 1;
-    duplicateContent.innerHTML = `<span>Số lần lặp từ là:</span> ${duplicateContentTimes}`;
-    console.log(duplicateContentTimes);
-  } else if (value.length === 0 && valueCheck.length !== 0) {
-    duplicateContent.innerHTML = `<span>Số lần lặp từ là:</span> Vui lòng nhập đoạn văn.`;
-  } else if (value.length !== 0 && valueCheck.length === 0) {
-    duplicateContent.innerHTML = `<span>Số lần lặp từ là:</span> Vui lòng nhập từ khóa.`;
-  } else {
-    duplicateContent.innerHTML = `<span>Số lần lặp từ là:</span> Vui lòng nhập đoạn văn và từ khóa.`;
-  }
+  let result = "";
+  let duplicateContentTimes = value
+    .toLowerCase()
+    .split(valueCheck.toLowerCase()).length;
+  if (value.length !== 0) {
+    if (valueCheck.length !== 0) {
+      result = `${duplicateContentTimes}`;
+    }
+  } else result = "Vui lòng nhập đầy đủ văn bản và từ khóa.";
+  $(
+    ".duplicate-content"
+  ).innerHTML = `<span>Số lần lặp lại là:</span> ${result}`;
 }
 
 export { checkDuplicateContentFn };
