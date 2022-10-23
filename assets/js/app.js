@@ -1,6 +1,7 @@
 import { checkTitleLengthFn } from "./checkTitleLength.js";
 import { checkDuplicateContentFn } from "./checkDuplicateContent.js";
 import { checkHeadingFn } from "./checkHeading.js";
+import { checkImageFn } from "./checkImage.js";
 import {
   checkATagFn,
   checkInternalLinkFn,
@@ -22,13 +23,17 @@ function getValue() {
   );
   let stringInputParagraphValue = $(".input-area").value;
   let inputCheckDuplicateContentValue = $(".input-check-box").value;
+
   checkTitleLengthFn(inputValue.trim().length);
+
   checkDuplicateContentFn(
     stringInputParagraphValue,
     inputCheckDuplicateContentValue
   );
+
   checkATagFn(inputParagraphValue);
   checkInternalLinkFn(inputParagraphValue);
   checkExternalLinkFn(inputParagraphValue);
   checkHeadingFn(inputParagraphValue);
+  checkImageFn(inputParagraphValue);
 }

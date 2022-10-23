@@ -80,6 +80,10 @@ body {
   width: 100%;
 }
 
+.image-stt,
+.image-src,
+.image-alt,
+.image-spec,
 .number-heading-item-h1,
 .number-heading-item-h2,
 .number-heading-item-h3,
@@ -100,4 +104,13 @@ span {
   text-transform: uppercase;
   text-decoration: underline;
   color: red;
+}
+
+.image-list-item {
+  list-style: none;
+}
+
+.image-list-item ul {
+  display: flex;
+  gap: 1vw;
 }
